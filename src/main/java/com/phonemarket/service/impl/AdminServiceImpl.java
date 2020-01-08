@@ -2,6 +2,7 @@ package com.phonemarket.service.impl;
 
 import java.util.List;
 
+import com.phonemarket.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -14,13 +15,13 @@ import com.phonemarket.service.IAdminService;
 public class AdminServiceImpl implements IAdminService {
 	@Autowired
 	private AdminsMapper adminsMapper;
-	
+
 	@Transactional(propagation=Propagation.REQUIRED,readOnly=true)
 	@Override
 	public Admins login(String name, String pass) {
 		List<Admins> list = adminsMapper.findAdminByName(name);
 		for (Admins a : list) {
-			if(a.getAdminPass().equals(pass)){
+			if(a.getAdminPass().equals(MD5Utils.passToMD5(pass))){
 				return a;
 			}
 		}

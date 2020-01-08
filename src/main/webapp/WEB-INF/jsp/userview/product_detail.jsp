@@ -108,11 +108,11 @@
 					          	<c:forEach items="${evaList }" var="e">
 					          		<hr class="layui-bg-blue">
 					          		<a href="javascript:;" class="media-left" style="float: left;">
-							            <img src="upload/${e.evaUser.userImg }" class="layui-nav-img" style="height:55px; width:55px;"> 
+							            <img src="upload/${e.evaUser.userImg }" class="layui-nav-img" style="height:55px; width:55px;">
 							          </a>
 							          <div class="pad-btm">
 							            <p class="fontColor"><span>${e.evaUser.userName }</span>
-							            	<div style="height:30px;width:150px;float:right;" id="evaStar${e.evaId }" class="evaStar"></div>        
+							            	<div style="height:30px;width:150px;float:right;" id="evaStar${e.evaId }" class="evaStar"></div>
 							            </p>
 							            <p class="fontColor">
 							                <span class="layui-badge layui-bg-blue"><fmt:formatDate value="${e.evaDate}" pattern="yyyy年-MM月-dd日" /></span>

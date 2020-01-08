@@ -29,7 +29,7 @@ public class GoodsServiceImpl implements IGoodsService {
 	private JedisPool jedisPool;
 	@Autowired
 	private IEvaluateService evaluateService;
-	
+
 	@Transactional(propagation=Propagation.REQUIRED,readOnly=true)
 	@Override
 	public List<Goods> findAll() {
@@ -52,7 +52,7 @@ public class GoodsServiceImpl implements IGoodsService {
 			System.out.println("(｡◕∀◕｡)(｡◕∀◕｡)(｡◕∀◕｡)恭喜你成功使用缓存进行查找！ヽ(́◕◞౪◟◕‵)ﾉ(｡◕∀◕｡)(｡◕∀◕｡)");
 			return JSON.toJavaObject(JSON.parseObject(str), Goods.class);
 		}
-		
+
 	}
 	@Transactional(propagation=Propagation.REQUIRED,rollbackFor=Exception.class)
 	@Override
@@ -78,7 +78,7 @@ public class GoodsServiceImpl implements IGoodsService {
 		jedis.close();
 		return rs;
 	}
-	
+
 	@Transactional(propagation=Propagation.REQUIRED,readOnly=true)
 	public PageInfo<Goods> findBySplitPage(Integer page,Integer size,String keyword){
 		List<Goods> list =new ArrayList<Goods>();

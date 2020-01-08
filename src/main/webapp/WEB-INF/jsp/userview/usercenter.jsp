@@ -80,8 +80,8 @@ a {
 						</ul>
 						<div class="layui-tab-content" style="height: auto;">
 							<div class="layui-tab-item layui-show" id="state1">
-									<!-- <div class='layui-colla-item'> -->
-										<!-- <h2 class='layui-colla-title'>订单编号：3724a838bbc64359a33de2c198859431&nbsp;&nbsp;总价：17995元&nbsp;</h2>
+									<div class='layui-colla-item'>
+										<h2 class='layui-colla-title'>订单编号：3724a838bbc64359a33de2c198859431&nbsp;&nbsp;总价：17995元&nbsp;</h2>
 										<div class='layui-colla-content'>
 											<h4>收货人：汤姆&nbsp;&nbsp;收货地址：河南郑州二七幸福小区</h4>
 											<div class='layui-form'>
@@ -107,8 +107,8 @@ a {
 											</div>
 											<a href='javascript:void(0)'
 												class='layui-btn layui-btn-normal layui-btn-fluid layui-btn-radius'>去付款</a>
-										</div> -->
-									<!-- </div> -->
+										</div>
+									 </div>
 							</div>
 							<div class="layui-tab-item" id="state2"></div>
 							<div class="layui-tab-item" id="state3"></div>
@@ -140,7 +140,7 @@ a {
 						      <th>所在地区</th>
 						      <th>详细地址</th>
 						      <th>操作</th>
-						    </tr> 
+						    </tr>
 						  </thead>
 						  <tbody>
 						    <tr>
@@ -177,7 +177,7 @@ a {
 						<div class="layui-card" style="margin-left: -20px;">
 					        <div class="layui-card-header">修改密码</div>
 					        <div class="layui-card-body" pad15="">
-					          
+
 					          <div class="layui-form" lay-filter="">
 					            <div class="layui-form-item">
 					              <label class="layui-form-label">当前密码</label>
@@ -204,7 +204,7 @@ a {
 					              </div>
 					            </div>
 					          </div>
-					          
+
 					        </div>
 					      </div>
 					</table>
@@ -223,13 +223,13 @@ a {
 		<label class="layui-form-label">收货人名称</label>
 		<div class="layui-input-inline">
 			 <input type="text" name="addrNickname" id="addrNickName" required lay-verify="required" placeholder="请输入收货人名称" value="" class="layui-input" />
-		</div>			 
+		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">收货人电话</label>
 		<div class="layui-input-inline">
 			 <input type="text" name="addrPhone" id="addrPhone" required lay-verify="required" placeholder="请输入收货电话" value="" class="layui-input" />
-		</div>			 
+		</div>
 	</div>
     <div class="layui-form-item">
     	<label class="layui-form-label">请选择地区</label>
@@ -252,16 +252,16 @@ a {
 		<label class="layui-form-label">详细地址</label>
 		<div class="layui-input-inline">
 			 <input style="width:590px;" type="text" name="addrDetail" id="addrDetail" placeholder="请输入详细地址" required lay-verify="required" value="" class="layui-input" />
-		</div>			 
+		</div>
 	 </div>
 	 <div class="layui-form-item">
 		<label class="layui-form-label">邮政编码</label>
 		<div class="layui-input-inline">
 			 <input type="text" name="addrZipcode" id="addrZipcode" required lay-verify="required" placeholder="请输入邮政编码" value="" class="layui-input" />
-		</div>			 
+		</div>
 	</div>
 	<button style="display:none;" type="reset" id="resetBtn">重置</button>
-</form>	
+</form>
  </div>
  <div id="evaData" style="width:600px;padding-top:15px;display:none;">
 		<form id="evaForm">
@@ -274,11 +274,11 @@ a {
 				</div>
 			</div>
 			<div class="layui-form-item">
-				<label class="layui-form-label">评论图</label> 
+				<label class="layui-form-label">评论图</label>
 				<div  class="layui-input-block">
 						<button type="button" class="layui-btn" id="test2">多图片上传</button>
-						<button type="button" class="layui-btn" id="test6">开始上传</button> 
-						<button type="button" class="layui-btn layui-danger" onclick="cleanImgsPreview()" id="cleanImgs">清空预览</button> 
+						<button type="button" class="layui-btn" id="test6">开始上传</button>
+						<button type="button" class="layui-btn layui-danger" onclick="cleanImgsPreview()" id="cleanImgs">清空预览</button>
 					    	预览图：
 					    <div class="layui-upload-list" id="demo2"></div>
 				</div>
@@ -476,7 +476,7 @@ a {
                     layero.addClass('layui-form');//添加form标识
                     layero.find('.layui-layer-btn0').attr('lay-filter', 'fromContent').attr('lay-submit', '');//将按钮弄成能提交的
                     $("#evaOrderId").val(id);
-                    form.render(); 
+                    form.render();
                 },
                 yes: function(index, layero){
                 	form.on('submit(fromContent)',function(data){
@@ -491,7 +491,7 @@ a {
                             $("#evaReset").click();
                             cleanImgsPreview();
                     	});
-                		
+
                 	})
                 }
             });
@@ -524,7 +524,7 @@ a {
 		                	$("#addrZipcode").val(data.addrZipcode);
 		                    layero.addClass('layui-form');//添加form标识
 		                    layero.find('.layui-layer-btn0').attr('lay-filter', 'fromContent').attr('lay-submit', '');//将按钮弄成能提交的
-		                    form.render(); 
+		                    form.render();
 		                },
 		                yes: function(index, layero){
 		                	form.on('submit(fromContent)',function(data){
@@ -538,7 +538,7 @@ a {
 		                            layer.close(index);
 		                            $("#resetBtn").click();
 		                    	});
-		                		
+
 		                	})
 		                }
 		            });
@@ -617,7 +617,7 @@ a {
                     layero.addClass('layui-form');//添加form标识
                     layero.find('.layui-layer-btn0').attr('lay-filter', 'fromContent').attr('lay-submit', '');//将按钮弄成能提交的
                     $("#resetBtn").click();
-                    form.render(); 
+                    form.render();
                 },
                 yes: function(index, layero){
                 	form.on('submit(fromContent)',function(data){
@@ -631,9 +631,9 @@ a {
                             layer.close(index);
                             $("#resetBtn").click();
                     	});
-                		
+
                 	})
-                	
+
                 }
             });
 		}
@@ -857,7 +857,7 @@ a {
 								}
 								str = str + "</div>";
 							}
-							
+
 							$("#state1").html(str);
 							element.render();
 						}

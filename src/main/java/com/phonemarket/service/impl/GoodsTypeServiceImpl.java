@@ -22,7 +22,7 @@ public class GoodsTypeServiceImpl implements IGoodsTypeService {
 	private GoodsTypeMapper goodsTypeMapper;
 	@Autowired
 	private GoodsMapper goodsMapper;
-	
+
 	@Transactional(propagation=Propagation.REQUIRED,readOnly=true)
 	@Override
 	public List<GoodsType> findAllType() {

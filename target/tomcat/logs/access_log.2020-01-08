@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:48 +0800] "GET /LEMarket HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:49 +0800] "GET /LEMarket/ HTTP/1.1" 200 7390 http-bio-8080-exec-7 1441
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:50 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:50 +0800] "POST /LEMarket/goodsType/findAll HTTP/1.1" 200 4336 http-bio-8080-exec-8 121
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:50 +0800] "POST /LEMarket/goods/findGoodsByType HTTP/1.1" 200 1869 http-bio-8080-exec-9 27
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:50 +0800] "POST /LEMarket/goods/findGoodsByType HTTP/1.1" 200 2267 http-bio-8080-exec-10 27
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:56 +0800] "GET /LEMarket/url_2 HTTP/1.1" 404 1378 http-bio-8080-exec-9 48
+0:0:0:0:0:0:0:1 - - [08/Jan/2020:15:13:56 +0800] "GET /LEMarket/resources/css/admin.css HTTP/1.1" 304 - http-bio-8080-exec-2 11

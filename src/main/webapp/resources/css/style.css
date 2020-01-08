@@ -84,7 +84,7 @@ div:hover {
 }
 
 .nav-sidebar {
-  margin-right: -21px; 
+  margin-right: -21px;
   margin-bottom: 20px;
   margin-left: -20px;
 }
@@ -166,28 +166,28 @@ div:hover {
 	padding-top: 5px;
 }
 
-.logo {  
-    padding:0;  
-}  
-#myCarousel {  
-    margin: 25px 0 0 0;  
-}  
-#navbar-collapse ul {  
-    margin-top:0;  
-}  
-.carousel-inner img{  
-    margin: 0 auto;  
-}  
-.carousel-control{  
-    font-size: 100px;  
-      
+.logo {
+    padding:0;
+}
+#myCarousel {
+    margin: 25px 0 0 0;
+}
+#navbar-collapse ul {
+    margin-top:0;
+}
+.carousel-inner img{
+    margin: 0 auto;
+}
+.carousel-control{
+    font-size: 100px;
+
 }
 
 .center {
 	text-align: center;
 }
 .margin-l {
-	margin-left: 8%; 
+	margin-left: 8%;
 }
 .big-button {
 	margin-left: 10px;
@@ -254,7 +254,7 @@ div:hover {
 }
 .span16{
 	padding-top:35px;
-	width: 1060px;
+	width: 100%;
     height: auto;
     float: right;
 }
