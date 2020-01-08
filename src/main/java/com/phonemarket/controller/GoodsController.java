@@ -86,8 +86,8 @@ public class GoodsController {
     @RequestMapping(value = "search",method = {RequestMethod.POST})
     public String search(String goodsName, Model model, HttpServletRequest request){
         List<Goods> goodsLike = goodsService.findGoodsLikeName(goodsName);
-//        HttpSession session = request.getSession();
-//        session.setAttribute("searchList", goodsLike);
+        HttpSession session = request.getSession();
+        session.setAttribute("searchList", goodsLike);
         model.addAttribute("searchList", goodsLike);
         return "userview/search";
     }
